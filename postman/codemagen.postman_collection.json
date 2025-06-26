@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "4a5c2437-30af-4830-9110-40c8cfe81279",
+		"name": "codemagen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32798370",
+		"_collection_link": "https://skycode-api-don.postman.co/workspace/Skycode-API-Don-Workspace~6400a2ee-e888-4c32-801c-8efac882ed1f/collection/32798370-4a5c2437-30af-4830-9110-40c8cfe81279?action=share&source=collection_link&creator=32798370"
+	},
+	"item": [
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "adddepartement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Operations\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/department/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getallData",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Operations\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/department/singledata/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"singledata",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatedepartment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Cook\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/department/update/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"update",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletedepartement",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/codemagen/department/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleDepartment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/codemagen/department/singledata/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"singledata",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getallData",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Operations\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/department/alldata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"department",
+								"alldata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "addEmployee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"name\": \"Amitabh Das\",\r\n    \"department_id\": 4,\r\n    \"email\": \"amitabh.das@example.com\",\r\n    \"phone_number\": \"9012345678\",\r\n    \"designation\": \"Finance Analyst\",\r\n    \"address\": \"3B, Ashok Nagar, Mumbai\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/employee/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"employee",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "allEmployee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/codemagen/employee/alldata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"employee",
+								"alldata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleEmployee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/codemagen/employee/data/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"employee",
+								"data",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateEmployee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Rohan Mehta\",\r\n    \"department_id\": 1,\r\n    \"email\": \"rohan.mehta@example.com\",\r\n    \"phone_number\": \"9876543210\",\r\n    \"designation\": \"Software Engineer\",\r\n    \"address\": \"14, Residency Road, Bengaluru\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/codemagen/employee/update/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"employee",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "employeeDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/codemagen/employee/delete/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"codemagen",
+								"employee",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

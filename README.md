@@ -59,7 +59,7 @@ Additionally, make sure that the following extensions are enabled in your PHP:
 - [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
 - [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
 <!-- Notice -->
-## 🗃️ Database Setup
+## Database Setup
 
 1. Import the `database/codemagen.sql` file into your MySQL server:
 2. Update the database credentials in:
@@ -73,3 +73,23 @@ public $default = [
  'database' => 'codemagen',
  ...
 ];
+
+##  Postman Collection
+
+You can test all available APIs using the included Postman collection:
+
+- File: `postman/codemagen.postman_collection.json`
+- Import it into Postman → Set base URL (e.g. `http://localhost/codemagen/`)
+- Try endpoints like its employee api:
+  - GET `employee/alldata`
+  - GET `employee/data/:id`
+  - POST `employee/add`
+  - PUT `employee/update/:id`
+  - DELETE `employee/delete/:id`
+
+- Try endpoints like its Department api:
+  - GET `department/alldata`
+  - GET `department/singledata/:id`
+  - POST `department/add`
+  - PUT `department/update/:id`
+  - DELETE `department/delete/:id`
