@@ -93,3 +93,16 @@ You can test all available APIs using the included Postman collection:
   - POST `department/add`
   - PUT `department/update/:id`
   - DELETE `department/delete/:id`
+
+//   project folder stuture
+// Option: Download ZIP (Manual method)
+Go to: https://codeigniter.com/download
+
+Download CodeIgniter 4.x ZIP
+
+Extract it to your htdocs or www folder (for XAMPP, WAMP)
+
+Rename folder (e.g. codemagen)
+
+Open browser:
+http://localhost/codemagen/public
